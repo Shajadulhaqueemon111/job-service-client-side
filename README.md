@@ -34,25 +34,6 @@ A full-stack, production-grade local on-demand service marketplace built specifi
 - **Node.js**: v18+ (tested on Node v20+)
 - **MongoDB**: Local MongoDB instance (`mongodb://127.0.0.1:27017/job-service-bd`) or a free MongoDB Atlas connection string.
 
-### 2. Environment Setup
-Create a `.env.local` file in the project root:
-
-```env
-# MongoDB Connection
-MONGODB_URI=mongodb://127.0.0.1:27017/job-service-bd
-
-# JWT Authentication Secrets (replace with 32+ character random secrets)
-JWT_ACCESS_SECRET=shebabd_super_secret_access_jwt_key_bangladesh_123456
-JWT_REFRESH_SECRET=shebabd_super_secret_refresh_jwt_key_bangladesh_67890
-
-# Cloudinary (Optional for production image uploads)
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-
-# Application URL
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-```
 
 ### 3. Install Dependencies
 ```bash
